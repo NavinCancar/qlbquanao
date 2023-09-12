@@ -1,0 +1,391 @@
+:root {
+    --primary: #D19C97;
+    --blue1: rgb(227, 227, 246);
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+   
+    --secondary: #EDF1FF;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #FFFFFF;
+    --dark: #1C1C1C;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: "Poppins", sans-serif;
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  html {
+    
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #6F6F6F;
+    text-align: left;
+  }
+  a{
+    text-decoration: none;
+    color: var(--dark);
+  }
+  a:hover {
+    text-decoration: none;
+    color: var(--primary);
+  }
+#hd{
+    background: rgb(227, 227, 246);
+}
+#hdtext{
+    margin-left: 3rem !important;
+}
+#hdicon{
+    float: right;
+    margin-right: 3rem !important;
+}
+
+#hdsd{
+    margin-top: 2rem;
+}
+/* text logo */
+.textlg{
+    color: var(--primary);
+    font-size: 40px;
+    margin-left: 2rem;
+    border-radius: 5px ;
+    border: 1px solid var(--secondary);
+}
+/* thanh tim kiem */
+.search{
+    float: left;
+    width: 35rem;
+    border-radius: 5px ;
+    border: 1px solid var(--secondary);
+}
+#searchicon{
+    float: right;
+    border: 1px solid var(--white);
+    color: var(--primary);
+    font-size: 1.5rem;
+}
+/* icon cua header 1 */
+#hdicon1 {
+   float: right;
+   margin-top: 3px;
+   margin-right: 3rem;
+   font-size: 1.1rem;
+}
+#hdicon1 a{
+  color: var(--primary);
+  border: 1px solid var(--secondary);
+  padding: 0.3rem;
+}
+/* dieu huong */
+#dieuhuong{
+  max-width: 100%;
+}
+.nav {
+  display: flex; /* sd flexbox de cac ptu ngang nhau*/
+  list-style-type: none; /* loai bo dau mac dinh */
+  margin:  1rem;
+}
+
+.nav li a {
+  margin-right: 2.5rem; 
+  color: #1C1C1C;
+ 
+}
+.nav li a:hover {
+  margin-right: 2.5rem; 
+  color: var(--primary);
+ 
+}
+#n2{
+  float: right;
+}
+#banner{
+ max-width: 100%;
+ margin-right: 2rem;
+ 
+}
+#anhbanner {
+ max-width: 100%;
+ height: 22rem;
+ overflow: hidden;
+ position: relative;
+}
+#anhbanner img {
+  max-width: 100%;
+  height: 22rem;
+  object-fit: cover;
+  box-shadow: 0px 0px 2px 2px rgba(74, 67, 67, 0.3);
+  filter: brightness(65%);
+ }
+ .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+  color: #fff;
+}
+
+.text h2 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.text p {
+  font-size: 25px;
+}
+/* dropdown danh muc */
+#danhmuc{
+  margin-top: 1.5rem;
+  border: 1px solid var(--secondary);
+  padding: 0;
+  width: 15rem;
+  margin-bottom: 0;
+  margin-left: 3rem;
+}
+.dropdown ul{
+  padding: 0;
+}
+#dwul li{
+  list-style-type: none;
+  margin: 0px;
+  padding: 0;
+  height: 2.5rem;
+}
+#dwul li:hover{
+  background: var(--primary);
+  list-style-type: none;
+  margin: 0px;
+  padding: 0;
+  height: 2.5rem;
+}
+.hddanhmuc  {
+  background: var(--primary);
+  color: #1C1C1C;
+}
+.hddanhmuc  b {
+  display: flex;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+}
+#dwul li a{
+  color: #1C1C1C;
+  margin-left: 1rem;
+}
+.ddli{
+  display: flex;
+  padding-top: 0.5rem;
+}
+#dwul .dwhr{
+  margin: 0px;
+  padding: 0;
+  border: 1px solid var(--secondary);
+}
+/* section dau index */
+
+section{
+  margin-top: 3rem;
+}
+#st1 h2{
+  color: var(--primary);
+  margin: 0.5rem;
+}
+#st1 h5{
+  color: var(--dark);
+  margin-top: 0.7rem;
+  font-size: 1rem;
+}
+#st1 #st1border{
+  border: 1px solid var(--secondary);
+   padding: 1rem;
+   
+}
+/* phan trang */
+#phancach {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+/* #phancach #pchr {
+  flex-grow: 1;
+} */
+#phancach b{
+ padding: 0 1rem;
+ color: var(--dark);
+ font-weight: 5rem;
+ font-size: 2rem;
+  
+}
+/* card san pham */
+.card #anhsp {
+  display: block;
+  height: 17rem;
+  max-width: 100%;
+  object-fit: cover;
+  transition: all .3s ;
+}
+.card #anhsp:hover {
+  height: 19rem;
+  max-width: 100%;
+  transform: scaleX(1.3);
+}
+.card{
+  
+  overflow: hidden;
+}
+#iconsp{
+  color: var(--primary);
+}
+/* danh muc san pham cua trang dk & dn */
+.dropdown{
+  margin-left: 2rem;
+}
+#dd .ddhd{
+  background-color: var(--primary);
+}
+#dd .ddbody .dropdown-item{
+  width: 11rem;
+}
+#dd .ddbody  :hover{
+  background: var(--primary);
+}
+#dd .dropdown-item  :hover{
+  background: var(--primary);
+}
+.formlog{
+  border: 3px solid var(--primary);
+  padding: 2rem;
+
+}
+.formlog button{
+  background: var(--secondary);
+  border: 1px solid var(--secondary);
+  color: #1C1C1C;
+}
+.formlog button:hover{
+  background: var(--primary);
+  border: 1px solid var(--primary);
+}
+/* duong phan cach */
+div.line {
+  position: relative;
+  margin-right: 1rem;
+  padding: 0;
+  width: 2px;
+  border-left: 4px solid black;
+  height: 34rem;
+
+}
+/* duong phan sach thanh tien trinh */
+#process{
+  margin-top: 1.5rem;
+  color: #000;
+  font-size: 1.8rem;
+}
+div#lineprocess{
+  position: relative;
+  margin: 3px;
+  padding: 0;
+  width: 5rem;
+  border: 3px solid black;
+  height: 4px;
+}
+#process #itemprocess{
+  padding-right: 1rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: -0.7rem;
+}
+/* to mau cho item */
+div.col-3#itemprocess:nth-child(1) {
+  color:var(--primary);
+}
+/* title */
+.formlog h3{
+  color: #1C1C1C;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+/* banner cac trang con lai */
+.banner{
+  background: var(--secondary);
+  max-width: 100%;
+  height: 15rem;
+}
+.banner .textbanner{
+  color: #1C1C1C;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4rem;
+  
+  /* text-transform: uppercase; */
+}
+#icondc i{
+  color: var(--primary);
+  margin-top: 0.5rem;
+}
+
+ /* footer */
+#ft{
+  background:rgb(227, 227, 246);
+  height: 20rem;
+  margin-top: 2rem;
+  max-width: 100%;
+}
+#ftcol p{
+  margin-left: 2.5rem;
+}
+#ftcol p i{
+  color: var(--primary);
+}
+#ftdk input{
+  width: 13rem;
+}
+#ftdk button{
+  background: var(--primary);
+}
+
+
