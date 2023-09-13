@@ -3,10 +3,11 @@
 
 <head>
     <meta charset="utf-8">
-    <title>FANCY SHOP</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
+
+    <?php wp_head(); ?>
 
     <!-- Favicon -->
     <link href="<?php bloginfo('stylesheet_directory') ?>/img/favicon.ico" rel="icon">
@@ -22,7 +23,7 @@
     <link href="<?php bloginfo('stylesheet_directory') ?>/css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body <?php body_class(); ?>>
     <!-- Topbar Start -->
     <header>
         <div class="container-fluid">
@@ -58,8 +59,8 @@
             </div>
             <div class="row align-items-center py-3 px-xl-5">
                 <div class="col-lg-3 d-none d-lg-block">
-                    <a href="" class="text-decoration-none">
-                        <h1 class="m-0 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border px-3 mr-1">E</span>Shopper</h1>
+                    <a href="<?php bloginfo('url') ?>" class="text-decoration-none">
+                        <h1 class="m-0 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border px-3 mr-1">FANCY</span>Shop</h1>
                     </a>
                 </div>
                 <div class="col-lg-6 col-6 text-left">
@@ -79,7 +80,7 @@
                         <i class="fas fa-heart text-primary"></i>
                         <span class="badge">0</span>
                     </a>
-                    <a href="" class="btn border">
+                    <a href="<?php bloginfo('stylesheet_directory') ?>/gio-hang" class="btn border">
                         <i class="fas fa-shopping-cart text-primary"></i>
                         <span class="badge">0</span>
                     </a>
@@ -128,21 +129,21 @@
                         </button>
                         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                             <div class="navbar-nav mr-auto py-0">
-                                <a href="index.html" class="nav-item nav-link">Home</a>
-                                <a href="shop.html" class="nav-item nav-link">Shop</a>
-                                <a href="detail.html" class="nav-item nav-link">Shop Detail</a>
-                                <div class="nav-item dropdown">
-                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
-                                    <div class="dropdown-menu rounded-0 m-0">
-                                        <a href="cart.html" class="dropdown-item">Shopping Cart</a>
-                                        <a href="checkout.html" class="dropdown-item">Checkout</a>
-                                    </div>
-                                </div>
-                                <a href="contact.html" class="nav-item nav-link active">Contact</a>
+                                <?php wp_nav_menu( 
+                                        array( 
+                                            'theme_location' => 'header-main', 
+                                            'container' => 'false', 
+                                            'menu_id' => 'header-main', 
+                                            'menu_class' => 'menu'
+                                        ) 
+                                    ); 
+                                ?>
                             </div>
                             <div class="navbar-nav ml-auto py-0">
-                                <a href="" class="nav-item nav-link">Login</a>
-                                <a href="" class="nav-item nav-link">Register</a>
+                                <ul>
+                                    <li><a href="<?php bloginfo('stylesheet_directory') ?>/dang-nhap" class="nav-item nav-link">Đăng ký</a></li>
+                                    <li><a href="<?php bloginfo('stylesheet_directory') ?>/dang-nhap" class="nav-item nav-link">Đăng nhập</a></li>
+                                </ul>
                             </div>
                         </div>
                     </nav>

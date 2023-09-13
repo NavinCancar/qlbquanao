@@ -79,6 +79,7 @@
 
     <!-- Template Javascript -->
     <script src="<?php bloginfo('stylesheet_directory') ?>/js/main.js"></script>
+    <?php wp_footer(); ?>
 </body>
 
 </html>

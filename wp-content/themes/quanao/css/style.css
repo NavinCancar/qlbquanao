@@ -4039,6 +4039,17 @@ input[type="button"].btn-block {
   list-style: none;
 }
 
+.navbar-nav ul {
+  list-style-type: none; /* Loại bỏ dấu chấm trước mỗi mục */
+  display: flex; /* Hiển thị các mục li trên cùng một hàng */
+  margin: 0; /* Loại bỏ khoảng cách dư thừa */
+  padding: 0; /* Loại bỏ khoảng cách dư thừa */
+}
+
+.navbar-nav li {
+  margin-right: 10px; /* Khoảng cách giữa các mục li */
+}
+
 .navbar-nav .nav-link {
   padding-right: 0;
   padding-left: 0;
@@ -4273,22 +4284,24 @@ input[type="button"].btn-block {
   color: rgba(0, 0, 0, 0.9);
 }
 
-.navbar-light .navbar-nav .nav-link {
+.navbar-light .navbar-nav .nav-link, .navbar-light a {
   color: rgba(0, 0, 0, 0.5);
 }
 
-.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus, 
+.navbar-light a:hover, .navbar-light a:focus {
   color: rgba(0, 0, 0, 0.7);
+  text-decoration: none;
 }
 
-.navbar-light .navbar-nav .nav-link.disabled {
+.navbar-light .navbar-nav .nav-link.disabled, .navbar-light a.disabled{
   color: rgba(0, 0, 0, 0.3);
 }
 
 .navbar-light .navbar-nav .show > .nav-link,
 .navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.show,
-.navbar-light .navbar-nav .nav-link.active {
+.navbar-light .navbar-nav .nav-link.active, .navbar-light a.show, .navbar-light a.active {
   color: rgba(0, 0, 0, 0.9);
 }
 
@@ -9468,24 +9481,26 @@ a.text-dark:hover, a.text-dark:focus {
   margin-left: 0;
 }
 
-.navbar-light .navbar-nav .nav-link {
+.navbar-light .navbar-nav .nav-link, .navbar-light a {
   padding: 20px 10px;
   color: #1C1C1C;
   outline: none;
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
-.navbar-light .navbar-nav .nav-link.active {
+.navbar-light .navbar-nav .nav-link.active, 
+.navbar-light a:hover , .navbar-light a.active {
   color: #D19C97;
+  text-decoration: none;
 }
 
 @media (max-width: 991.98px) {
-  .navbar-light .navbar-nav .nav-link {
+  .navbar-light .navbar-nav .nav-link, .navbar-light a {
     padding: 5px 0px;
   }
 }
 
-.navbar-vertical.navbar-light .navbar-nav .nav-link {
+.navbar-vertical.navbar-light .navbar-nav .nav-link, .navbar-vertical.navbar-light a {
   padding: 8px 30px;
   border-bottom: 1px solid #EDF1FF;
 }
