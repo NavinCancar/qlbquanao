@@ -9609,3 +9609,10 @@ del bdi{
   display: block;
   font-size: 0.8rem;
 }
+
+.woocommerce-ordering .orderby{
+    padding: 6px 12px;
+    white-space: nowrap;
+    color: #6F6F6F;
+}
+

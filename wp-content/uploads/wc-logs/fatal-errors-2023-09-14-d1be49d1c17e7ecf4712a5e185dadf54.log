@@ -50,3 +50,7 @@ Stack trace:
 #3 {main}
   thrown in D:\xampp\htdocs\qlbquanao\wp-content\themes\quanao\index.php on line 70
 
+2023-09-14T08:09:05+00:00 CRITICAL syntax error, unexpected token "}" in D:\xampp\htdocs\qlbquanao\wp-content\themes\quanao\functions.php on line 91
+
+2023-09-14T08:09:08+00:00 CRITICAL syntax error, unexpected token "}" in D:\xampp\htdocs\qlbquanao\wp-content\themes\quanao\functions.php on line 91
+
