@@ -19,11 +19,12 @@ defined( 'ABSPATH' ) || exit;
 
 ?>
 <div class="cart_totals <?php echo ( WC()->customer->has_calculated_shipping() ) ? 'calculated_shipping' : ''; ?>">
+<div class="card border-secondary mb-5">
+    <div class="card-header bg-secondary border-0">
+		<?php do_action( 'woocommerce_before_cart_totals' ); ?>
 
-	<?php do_action( 'woocommerce_before_cart_totals' ); ?>
-
-	<h2><?php esc_html_e( 'Cart totals', 'woocommerce' ); ?></h2>
-
+		<h4 class="font-weight-semi-bold m-0"><?php esc_html_e( 'Cart totals', 'woocommerce' ); ?></h4>
+	</div>
 	<table cellspacing="0" class="shop_table shop_table_responsive">
 
 		<tr class="cart-subtotal">
@@ -93,20 +94,18 @@ defined( 'ABSPATH' ) || exit;
 		?>
 
 		<?php do_action( 'woocommerce_cart_totals_before_order_total' ); ?>
-
-		<tr class="order-total">
-			<th><?php esc_html_e( 'Total', 'woocommerce' ); ?></th>
-			<td data-title="<?php esc_attr_e( 'Total', 'woocommerce' ); ?>"><?php wc_cart_totals_order_total_html(); ?></td>
-		</tr>
-
+		<div class="d-flex justify-content-between mt-2">
+			<tr class="order-total">
+				<th><?php esc_html_e( 'Total', 'woocommerce' ); ?></th>
+				<td data-title="<?php esc_attr_e( 'Total', 'woocommerce' ); ?>"><?php wc_cart_totals_order_total_html(); ?></td>
+			</tr>
+		</div>
 		<?php do_action( 'woocommerce_cart_totals_after_order_total' ); ?>
 
 	</table>
 
-	<div class="wc-proceed-to-checkout">
-		<?php do_action( 'woocommerce_proceed_to_checkout' ); ?>
-	</div>
+	<?php do_action( 'woocommerce_proceed_to_checkout' ); ?>
 
 	<?php do_action( 'woocommerce_after_cart_totals' ); ?>
-
+	</div>
 </div>

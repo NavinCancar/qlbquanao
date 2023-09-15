@@ -9616,3 +9616,15 @@ del bdi{
     color: #6F6F6F;
 }
 
+.woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals {
+    float: right;
+    width: 100%;
+}
+
+.size-75 img{
+  width: 75px !important;
+}
+
+.woocommerce table.shop_table {
+  border: none !important;
+}
