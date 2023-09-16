@@ -183,7 +183,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 		<?php do_action( 'woocommerce_before_cart_collaterals' ); ?>
 		<div class="col-lg-4">
 			<div class="cart-collaterals">
-				<form class="mb-5" action="">
+				<form class="mb-2" action="">
 					<?php if ( wc_coupons_enabled() ) { ?>
 						<!--<div class="coupon">-->
 						<div class="input-group">

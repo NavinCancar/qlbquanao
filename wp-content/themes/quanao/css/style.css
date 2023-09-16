@@ -1872,7 +1872,7 @@ pre code {
   border: 0;
 }
 
-.form-control {
+.form-control, .input-text {
   display: block;
   width: 100%;
   height: calc(1.5em + 0.75rem + 2px);
@@ -9660,3 +9660,74 @@ del bdi{
   background-color: #34ce5785;
 }
 
+.shop_table th, .shop_table_responsive td{
+  color: #000;
+}
+
+
+/*Thanh toán*/
+
+.woocommerce-error {
+  border-top: 3px solid #b81c23;
+}
+
+.input-text {
+  border: 1px solid #f1f1f1;
+  margin-left: 10px;
+}
+
+.woocommerce-additional-fields .form-row, 
+.woocommerce-billing-fields .form-row,
+.woocommerce-shipping-fields__field-wrapper .form-row {
+  display: block;
+}
+
+.woocommerce-additional-fields label, 
+.woocommerce-billing-fields label,
+.woocommerce-shipping-fields__field-wrapper label {
+  color: #1C1C1C;
+  font-weight: bold;
+}
+
+.select2-container--default .select2-selection--single {
+  border: 1px solid #f1f1f1;
+  padding-top: 6px;
+}
+
+span.select2-selection.select2-selection--single {
+  height: 38px;  
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: #495057;
+}
+
+.woocommerce-shipping-fields {
+  padding-top: 20px;
+}
+
+#add_payment_method #payment, .woocommerce-cart #payment, .woocommerce-checkout #payment {
+  background: #EDF1FF;
+}
+
+#add_payment_method #payment div.payment_box, .woocommerce-cart #payment div.payment_box, .woocommerce-checkout #payment div.payment_box {
+  background-color: #e7ccc950;
+}
+
+#add_payment_method #payment div.payment_box::before, .woocommerce-cart #payment div.payment_box::before, .woocommerce-checkout #payment div.payment_box::before {
+  content: "";
+  display: block;
+  border: 1em solid #e7ccc950;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  position: absolute;
+  top: -0.75em;
+  left: 0;
+  margin: -1em 0 0 2em;
+}
+
+/*Hoá đơn*/
+.woocommerce-order-details__title, .woocommerce-column__title{
+  color: #1C1C1C;
+}
