@@ -15,17 +15,17 @@
  * @version 3.6.0
  * @global WC_Checkout $checkout
  */
-
+//Thông tin thanh toán
 defined( 'ABSPATH' ) || exit;
 ?>
 <div class="woocommerce-billing-fields">
 	<?php if ( wc_ship_to_billing_address_only() && WC()->cart->needs_shipping() ) : ?>
 
-		<h3><?php esc_html_e( 'Billing &amp; Shipping', 'woocommerce' ); ?></h3>
+		<h3 class="font-weight-semi-bold mb-4"><?php esc_html_e( 'Billing &amp; Shipping', 'woocommerce' ); ?></h3>
 
 	<?php else : ?>
 
-		<h3><?php esc_html_e( 'Billing details', 'woocommerce' ); ?></h3>
+		<h3 class="font-weight-semi-bold mb-4"><?php esc_html_e( 'Billing details', 'woocommerce' ); ?></h3>
 
 	<?php endif; ?>
 

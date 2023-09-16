@@ -24,6 +24,7 @@ if ( ! $notices ) {
 }
 
 ?>
+<div class="container-fluid">
 <ul class="woocommerce-error" role="alert">
 	<?php foreach ( $notices as $notice ) : ?>
 		<li<?php echo wc_get_notice_data_attr( $notice ); ?>>
@@ -31,3 +32,4 @@ if ( ! $notices ) {
 		</li>
 	<?php endforeach; ?>
 </ul>
+</div>
