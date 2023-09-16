@@ -23,9 +23,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 <li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
 
-	<div id="comment-<?php comment_ID(); ?>" class="comment_container">
+    <div id="comment-<?php comment_ID(); ?>" class="comment_container">
 
-		<?php
+        <?php
 		/**
 		 * The woocommerce_review_before hook
 		 *
@@ -34,9 +34,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 		do_action( 'woocommerce_review_before', $comment );
 		?>
 
-		<div class="comment-text">
+        <div class="comment-text">
 
-			<?php
+            <?php
 			/**
 			 * The woocommerce_review_before_comment_meta hook.
 			 *
@@ -63,5 +63,5 @@ if ( ! defined( 'ABSPATH' ) ) {
 			do_action( 'woocommerce_review_after_comment_text', $comment );
 			?>
 
-		</div>
-	</div>
+        </div>
+    </div>

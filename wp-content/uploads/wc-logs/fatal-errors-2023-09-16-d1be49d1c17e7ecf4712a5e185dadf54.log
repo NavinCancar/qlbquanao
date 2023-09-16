@@ -1,0 +1,36 @@
+2023-09-16T18:00:59+00:00 CRITICAL Uncaught Error: Call to undefined function get_head() in D:\laragon\www\qlbquanao\wp-content\themes\quanao\header.php:4
+Stack trace:
+#0 D:\laragon\www\qlbquanao\wp-includes\template.php(785): require_once()
+#1 D:\laragon\www\qlbquanao\wp-includes\template.php(720): load_template('D:\\laragon\\www\\...', true, Array)
+#2 D:\laragon\www\qlbquanao\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 D:\laragon\www\qlbquanao\wp-content\themes\quanao\index.php(1): get_header()
+#4 D:\laragon\www\qlbquanao\wp-includes\template-loader.php(106): include('D:\\laragon\\www\\...')
+#5 D:\laragon\www\qlbquanao\wp-blog-header.php(19): require_once('D:\\laragon\\www\\...')
+#6 D:\laragon\www\qlbquanao\index.php(17): require('D:\\laragon\\www\\...')
+#7 {main}
+  thrown in D:\laragon\www\qlbquanao\wp-content\themes\quanao\header.php on line 4
+
+2023-09-16T18:03:52+00:00 CRITICAL Uncaught Error: Call to undefined function get_head() in D:\laragon\www\qlbquanao\wp-content\themes\quanao\header.php:4
+Stack trace:
+#0 D:\laragon\www\qlbquanao\wp-includes\template.php(785): require_once()
+#1 D:\laragon\www\qlbquanao\wp-includes\template.php(720): load_template('D:\\laragon\\www\\...', true, Array)
+#2 D:\laragon\www\qlbquanao\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 D:\laragon\www\qlbquanao\wp-content\themes\quanao\index.php(1): get_header()
+#4 D:\laragon\www\qlbquanao\wp-includes\template-loader.php(106): include('D:\\laragon\\www\\...')
+#5 D:\laragon\www\qlbquanao\wp-blog-header.php(19): require_once('D:\\laragon\\www\\...')
+#6 D:\laragon\www\qlbquanao\index.php(17): require('D:\\laragon\\www\\...')
+#7 {main}
+  thrown in D:\laragon\www\qlbquanao\wp-content\themes\quanao\header.php on line 4
+
+2023-09-16T18:06:48+00:00 CRITICAL Uncaught Error: Call to undefined function get_head() in D:\laragon\www\qlbquanao\wp-content\themes\quanao\header.php:4
+Stack trace:
+#0 D:\laragon\www\qlbquanao\wp-includes\template.php(785): require_once()
+#1 D:\laragon\www\qlbquanao\wp-includes\template.php(720): load_template('D:\\laragon\\www\\...', true, Array)
+#2 D:\laragon\www\qlbquanao\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 D:\laragon\www\qlbquanao\wp-content\themes\quanao\index.php(1): get_header()
+#4 D:\laragon\www\qlbquanao\wp-includes\template-loader.php(106): include('D:\\laragon\\www\\...')
+#5 D:\laragon\www\qlbquanao\wp-blog-header.php(19): require_once('D:\\laragon\\www\\...')
+#6 D:\laragon\www\qlbquanao\index.php(17): require('D:\\laragon\\www\\...')
+#7 {main}
+  thrown in D:\laragon\www\qlbquanao\wp-content\themes\quanao\header.php on line 4
+

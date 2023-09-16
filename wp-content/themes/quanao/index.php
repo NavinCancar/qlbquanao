@@ -84,19 +84,46 @@
     <!-- danh muc 1 -->
     <div class="container-fluid pt-5">
         <div class="text-center mb-4">
-            <h2 class="section-title px-5"><span class="px-2">SẢN PHẨM NỔI BẬT</span></h2>
+            <h2 class="section-title px-5"><span class="px-2">ÁO THUN</span></h2>
         </div>
         <div class="row px-xl-5 pb-3">
 
-            <?php //tax_query chỉ dành cho sp nổi bật
-                    $tax_query[] = array(
-                        'taxonomy' => 'product_visibility',
-                        'field'    => 'name',
-                        'terms'    => 'featured',
-                        'operator' => 'IN',
-                    );
-                ?>
-            <?php $args = array( 'post_type' => 'product','posts_per_page' => 4,'ignore_sticky_posts' => 1, 'tax_query' => $tax_query); ?>
+            <?php
+             $sp1 = get_term_by('id',17,'product_cat');
+            $args = array( 
+                    'post_type' => 'product',
+                    'posts_per_page' => 4,
+                    'ignore_sticky_posts' => 1,
+                    'product_cart' => $sp1->slug
+                ); 
+            ?>
+            <?php $getposts = new WP_query( $args);?>
+            <?php global $wp_query; $wp_query->in_the_loop = true; ?>
+            <?php while ($getposts->have_posts()) : $getposts->the_post(); ?>
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <?php get_template_part('content/item_product')?>
+            </div>
+            <?php endwhile; wp_reset_postdata(); ?>
+        </div>
+    </div>
+    <!-- danh muc 1 End -->
+    <!-- danh muc 1 -->
+    <div class="container-fluid pt-5">
+        <?php  
+            $cat = get_term_by('id',26,'product_cat');
+        ?>
+        <div class="text-center mb-4">
+            <h2 class="section-title px-5"><span class="px-2">QUẦN JEAN NỮ</span></h2>
+        </div>
+        <div class="row px-xl-5 pb-3">
+
+            <?php $args = array( 
+                    'post_type' => 'product',
+                    'posts_per_page' => 4,
+                    'ignore_sticky_posts' => 1,
+                    'product_cart' => $cat->slug
+                ); 
+            ?>
             <?php $getposts = new WP_query( $args);?>
             <?php global $wp_query; $wp_query->in_the_loop = true; ?>
             <?php while ($getposts->have_posts()) : $getposts->the_post(); ?>
@@ -112,3 +139,4 @@
 
 <!--Note: Ngoài ra có thể get_sidebar() tuy nhiên phần này chỉ dùng cho trang cửa hàng nên không xử lý.
 Các trường hợp còn lại get_template_part('<tền file không .php>')-->
+

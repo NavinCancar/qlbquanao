@@ -23,18 +23,27 @@ global $product;
 ?>
 <div class="product_meta">
 
-	<?php do_action( 'woocommerce_product_meta_start' ); ?>
+    <?php do_action( 'woocommerce_product_meta_start' ); ?>
 
-	<?php if ( wc_product_sku_enabled() && ( $product->get_sku() || $product->is_type( 'variable' ) ) ) : ?>
+    <?php if ( wc_product_sku_enabled() && ( $product->get_sku() || $product->is_type( 'variable' ) ) ) : ?>
 
-		<span class="sku_wrapper"><?php esc_html_e( 'SKU:', 'woocommerce' ); ?> <span class="sku"><?php echo ( $sku = $product->get_sku() ) ? $sku : esc_html__( 'N/A', 'woocommerce' ); ?></span></span>
+    <span class="sku_wrapper"><?php esc_html_e( 'SKU:', 'woocommerce' ); ?> <span
+            class="sku"><?php echo ( $sku = $product->get_sku() ) ? $sku : esc_html__( 'N/A', 'woocommerce' ); ?></span></span>
 
-	<?php endif; ?>
+    <?php endif; ?>
 
-	<?php echo wc_get_product_category_list( $product->get_id(), ', ', '<span class="posted_in">' . _n( 'Category:', 'Categories:', count( $product->get_category_ids() ), 'woocommerce' ) . ' ', '</span>' ); ?>
+    <?php echo wc_get_product_category_list( $product->get_id(), ', ', '<span class="posted_in">' . _n( 'Category:', 'Categories:', count( $product->get_category_ids() ), 'woocommerce' ) . ' ', '</span>' ); ?>
 
-	<?php echo wc_get_product_tag_list( $product->get_id(), ', ', '<span class="tagged_as">' . _n( 'Tag:', 'Tags:', count( $product->get_tag_ids() ), 'woocommerce' ) . ' ', '</span>' ); ?>
-
-	<?php do_action( 'woocommerce_product_meta_end' ); ?>
-
+    <?php do_action( 'woocommerce_product_meta_end' ); ?>
+    <div>
+        <h5 class="mt-3">Hướng Dẫn Chọn Size Cho Bạn</h5>
+        <ol>
+        </ol>
+        <li>Size XS: vai 34, eo >=60, ngực 75, dài 80, mông 75</li>
+        <li>Size S: vai 34, eo 66, ngực 84, dài 94, mông 80</li>
+        <li>Size M: vai 35, eo 70, ngực 88, dài 95, mông 80</li>
+        <li>Size L: vai 36, eo 74, ngực 92, dài 96, mông 96</li>
+        <li>Size XL: vai 38, eo 80, ngực 95, dài 96, mông 100</li>
+        </ol>
+    </div>
 </div>
