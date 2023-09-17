@@ -1,0 +1,32 @@
+2023-09-17T07:38:06+00:00 CRITICAL Uncaught TypeError: Automattic\WooCommerce\Pinterest\Admin\Product\Attributes\VariationsAttributes::get_form(): Argument #1 ($variation) must be of type WC_Product_Variation, bool given, called in D:\laragon\www\qlbquanao\wp-content\plugins\pinterest-for-woocommerce\src\Admin\Product\Attributes\VariationsAttributes.php on line 116 and defined in D:\laragon\www\qlbquanao\wp-content\plugins\pinterest-for-woocommerce\src\Admin\Product\Attributes\VariationsAttributes.php:143
+Stack trace:
+#0 D:\laragon\www\qlbquanao\wp-content\plugins\pinterest-for-woocommerce\src\Admin\Product\Attributes\VariationsAttributes.php(116): Automattic\WooCommerce\Pinterest\Admin\Product\Attributes\VariationsAttributes->get_form(false, 9)
+#1 D:\laragon\www\qlbquanao\wp-content\plugins\pinterest-for-woocommerce\src\Admin\Product\Attributes\VariationsAttributes.php(69): Automattic\WooCommerce\Pinterest\Admin\Product\Attributes\VariationsAttributes->handle_save_variation(97, 9)
+#2 D:\laragon\www\qlbquanao\wp-includes\class-wp-hook.php(310): Automattic\WooCommerce\Pinterest\Admin\Product\Attributes\VariationsAttributes->Automattic\WooCommerce\Pinterest\Admin\Product\Attributes\{closure}(97, 9)
+#3 D:\laragon\www\qlbquanao\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#4 D:\laragon\www\qlbquanao\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#5 D:\laragon\www\qlbquanao\wp-content\plugins\woocommerce\includes\admin\meta-boxes\class-wc-meta-box-product-data.php(568): do_action('woocommerce_sav...', 97, 9)
+#6 D:\laragon\www\qlbquanao\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(2423): WC_Meta_Box_Product_Data::save_variations(85, Object(WP_Post))
+#7 D:\laragon\www\qlbquanao\wp-includes\class-wp-hook.php(310): WC_AJAX::save_variations('')
+#8 D:\laragon\www\qlbquanao\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#9 D:\laragon\www\qlbquanao\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#10 D:\laragon\www\qlbquanao\wp-admin\admin-ajax.php(188): do_action('wp_ajax_woocomm...')
+#11 {main}
+  thrown in D:\laragon\www\qlbquanao\wp-content\plugins\pinterest-for-woocommerce\src\Admin\Product\Attributes\VariationsAttributes.php on line 143
+
+2023-09-17T07:38:08+00:00 CRITICAL Uncaught TypeError: Automattic\WooCommerce\Pinterest\Admin\Product\Attributes\VariationsAttributes::get_form(): Argument #1 ($variation) must be of type WC_Product_Variation, bool given, called in D:\laragon\www\qlbquanao\wp-content\plugins\pinterest-for-woocommerce\src\Admin\Product\Attributes\VariationsAttributes.php on line 116 and defined in D:\laragon\www\qlbquanao\wp-content\plugins\pinterest-for-woocommerce\src\Admin\Product\Attributes\VariationsAttributes.php:143
+Stack trace:
+#0 D:\laragon\www\qlbquanao\wp-content\plugins\pinterest-for-woocommerce\src\Admin\Product\Attributes\VariationsAttributes.php(116): Automattic\WooCommerce\Pinterest\Admin\Product\Attributes\VariationsAttributes->get_form(false, 9)
+#1 D:\laragon\www\qlbquanao\wp-content\plugins\pinterest-for-woocommerce\src\Admin\Product\Attributes\VariationsAttributes.php(69): Automattic\WooCommerce\Pinterest\Admin\Product\Attributes\VariationsAttributes->handle_save_variation(97, 9)
+#2 D:\laragon\www\qlbquanao\wp-includes\class-wp-hook.php(310): Automattic\WooCommerce\Pinterest\Admin\Product\Attributes\VariationsAttributes->Automattic\WooCommerce\Pinterest\Admin\Product\Attributes\{closure}(97, 9)
+#3 D:\laragon\www\qlbquanao\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#4 D:\laragon\www\qlbquanao\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#5 D:\laragon\www\qlbquanao\wp-content\plugins\woocommerce\includes\admin\meta-boxes\class-wc-meta-box-product-data.php(568): do_action('woocommerce_sav...', 97, 9)
+#6 D:\laragon\www\qlbquanao\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(2423): WC_Meta_Box_Product_Data::save_variations(85, Object(WP_Post))
+#7 D:\laragon\www\qlbquanao\wp-includes\class-wp-hook.php(310): WC_AJAX::save_variations('')
+#8 D:\laragon\www\qlbquanao\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#9 D:\laragon\www\qlbquanao\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#10 D:\laragon\www\qlbquanao\wp-admin\admin-ajax.php(188): do_action('wp_ajax_woocomm...')
+#11 {main}
+  thrown in D:\laragon\www\qlbquanao\wp-content\plugins\pinterest-for-woocommerce\src\Admin\Product\Attributes\VariationsAttributes.php on line 143
+
