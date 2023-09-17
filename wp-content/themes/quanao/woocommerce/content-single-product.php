@@ -33,6 +33,7 @@ if ( post_password_required() ) {
 ?>
 <div id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
 
+	<!--Ảnh-->
 	<?php
 	/**
 	 * Hook: woocommerce_before_single_product_summary.
@@ -42,7 +43,8 @@ if ( post_password_required() ) {
 	 */
 	do_action( 'woocommerce_before_single_product_summary' );
 	?>
-
+	
+	<!--Mô tả-->
 	<div class="summary entry-summary">
 		<?php
 		/**
@@ -61,6 +63,7 @@ if ( post_password_required() ) {
 		?>
 	</div>
 
+	<!--Thông tin bổ sung, đánh giá và liên quan-->
 	<?php
 	/**
 	 * Hook: woocommerce_after_single_product_summary.

@@ -89,12 +89,12 @@
         <div class="row px-xl-5 pb-3">
 
             <?php
-             $sp1 = get_term_by('id',17,'product_cat');
+            $cat1 = get_term_by('id',15,'product_cat');
             $args = array( 
                     'post_type' => 'product',
                     'posts_per_page' => 4,
                     'ignore_sticky_posts' => 1,
-                    'product_cart' => $sp1->slug
+                    'product_cat' => $cat1->slug
                 ); 
             ?>
             <?php $getposts = new WP_query( $args);?>
@@ -110,7 +110,7 @@
     <!-- danh muc 1 -->
     <div class="container-fluid pt-5">
         <?php  
-            $cat = get_term_by('id',26,'product_cat');
+            $cat2 = get_term_by('id',26,'product_cat');
         ?>
         <div class="text-center mb-4">
             <h2 class="section-title px-5"><span class="px-2">QUẦN JEAN NỮ</span></h2>
@@ -121,7 +121,7 @@
                     'post_type' => 'product',
                     'posts_per_page' => 4,
                     'ignore_sticky_posts' => 1,
-                    'product_cart' => $cat->slug
+                    'product_cat' => $cat2->slug
                 ); 
             ?>
             <?php $getposts = new WP_query( $args);?>

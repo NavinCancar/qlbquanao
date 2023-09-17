@@ -71,8 +71,8 @@
                     &copy; <a class="text-dark font-weight-semi-bold" href="#">Fancy Shop</a>.The best choice for you.
                     Designed
                     by
-                    <a class="text-dark font-weight-semi-bold" href="https://htmlcodex.com">Fancy05</a><br>
-                    Nhóm 05 <a href="https://themewagon.com" target="_blank">TMĐT</a>
+                    <a class="text-dark font-weight-semi-bold" href="#">Fancy05</a><br>
+                    Nhóm 05 <a href="#" target="_blank">TMĐT</a>
                 </p>
             </div>
             <div class="col-md-6 px-xl-0 text-center text-md-right">

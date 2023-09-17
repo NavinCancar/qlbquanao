@@ -6,10 +6,10 @@
     <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
         <?php echo get_the_post_thumbnail(get_the_ID(), 'full', array( 'class' =>'img-fluid w-100') ); ?>
     </div>
-    <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+    <?php if ($product->is_on_sale()) echo '<img src="'.get_stylesheet_directory_uri().'/img/sale.png" class="sale-circle">'?>
+    <div class="card-body border-left border-right text-center p-2 pt-3 pb-3">
         <h6 class="text-truncate mb-3"><?php the_title(); ?></h6>
         <div class="d-flex justify-content-center">
-            <?php if ($product->is_on_sale()) echo 'giảm'?>
             <h6><?php echo $product->get_price_html(); ?></h6>
             <!--$product->get_regular_price(); && $product->get_sale_price(); cách lấy giá từng cái nhưng không có format-->
         </div>

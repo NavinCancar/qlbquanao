@@ -35,7 +35,9 @@ if ( $related_products ) : ?>
     </div>
     <?php woocommerce_product_loop_start(); ?>
     <div class="row px-xl-5 pb-3">
+        
         <?php foreach ( $related_products as $related_product ) : ?>
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">    
         <?php
 					$post_object = get_post( $related_product->get_id() );
 
@@ -43,7 +45,7 @@ if ( $related_products ) : ?>
 					?>
 
         <?php wc_get_template_part( 'content', 'product' );?>
-
+        </div>
         <?php endforeach; ?>
     </div>
 

@@ -30,3 +30,25 @@ Stack trace:
 #11 {main}
   thrown in D:\laragon\www\qlbquanao\wp-content\plugins\pinterest-for-woocommerce\src\Admin\Product\Attributes\VariationsAttributes.php on line 143
 
+2023-09-17T13:00:24+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in D:\xampp\htdocs\qlbquanao\wp-content\themes\quanao\index.php:94
+Stack trace:
+#0 D:\xampp\htdocs\qlbquanao\wp-includes\template-loader.php(106): include()
+#1 D:\xampp\htdocs\qlbquanao\wp-blog-header.php(19): require_once('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\qlbquanao\index.php(17): require('D:\\xampp\\htdocs...')
+#3 {main}
+  thrown in D:\xampp\htdocs\qlbquanao\wp-content\themes\quanao\index.php on line 94
+
+2023-09-17T13:06:28+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in D:\xampp\htdocs\qlbquanao\wp-content\themes\quanao\index.php:94
+Stack trace:
+#0 D:\xampp\htdocs\qlbquanao\wp-includes\template-loader.php(106): include()
+#1 D:\xampp\htdocs\qlbquanao\wp-blog-header.php(19): require_once('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\qlbquanao\index.php(17): require('D:\\xampp\\htdocs...')
+#3 {main}
+  thrown in D:\xampp\htdocs\qlbquanao\wp-content\themes\quanao\index.php on line 94
+
+2023-09-17T14:52:39+00:00 CRITICAL syntax error, unexpected variable "$columns" in D:\xampp\htdocs\qlbquanao\wp-content\themes\quanao\woocommerce\single-product\product-image.php on line 27
+
+2023-09-17T15:03:49+00:00 CRITICAL syntax error, unexpected end of file, expecting "elseif" or "else" or "endif" in D:\xampp\htdocs\qlbquanao\wp-content\themes\quanao\woocommerce\single-product\sale-flash.php on line 31
+
+2023-09-17T15:33:30+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\xampp\htdocs\qlbquanao\wp-content\themes\quanao\woocommerce\content-product.php on line 20
+

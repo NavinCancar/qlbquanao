@@ -24,6 +24,4 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	return;
 }
 ?>
-<div class="col-lg-4 col-md-6 col-sm-12 pb-1">
-	<?php get_template_part('content/item_product')?>
-</div>
+<?php get_template_part('content/item_product')?>

@@ -86,6 +86,7 @@ get_header( 'shop' );?>
 
 						if ( wc_get_loop_prop( 'total' ) ) {
 							while ( have_posts() ) {
+								echo '<div class="col-lg-4 col-md-6 col-sm-12 pb-1">';
 								the_post();
 
 								/**
@@ -94,6 +95,7 @@ get_header( 'shop' );?>
 								do_action( 'woocommerce_shop_loop' );
 
 								wc_get_template_part( 'content', 'product' );
+								echo '</div>';
 							}
 						}
 

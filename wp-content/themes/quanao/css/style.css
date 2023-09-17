@@ -32,7 +32,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Poppins", sans-serif;
+  --font-family-sans-serif: "Open Sans", sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -55,7 +55,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -1872,7 +1872,7 @@ pre code {
   border: 0;
 }
 
-.form-control, .input-text {
+.form-control, .input-text, .variations select {
   display: block;
   width: 100%;
   height: calc(1.5em + 0.75rem + 2px);
@@ -5581,7 +5581,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5693,7 +5693,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -9599,6 +9599,16 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 /*Danh mục sản phẩm*/
+.sale-circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 55px;
+  height: 55px;
+  background-color: lightgray;
+  border-radius: 50%;
+}
+
 bdi{
   color: #ba6a62;
   text-decoration: none;
@@ -9636,7 +9646,7 @@ del bdi{
   background-color: #edf1ff;
   color: #1C1C1C;
   border-top: 3px solid #34ce57;
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .woocommerce-info::before {
@@ -9730,4 +9740,62 @@ span.select2-selection.select2-selection--single {
 /*Hoá đơn*/
 .woocommerce-order-details__title, .woocommerce-column__title{
   color: #1C1C1C;
+}
+
+/*Chi tiết sản phẩm*/
+.onsale {
+  position: absolute;
+  top: -0.5em;
+  left: -0.5em;
+  z-index: 9;
+  width: 115px;
+  height: 115px;
+}
+
+.woocommerce div.product .product_title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.woocommerce div.product .product_title::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 2px;
+  background-color: #ead2d0;
+}
+
+.woocommerce div.product p.price {
+  color: var(--gray);
+  font-size: 1rem;
+}
+
+bdi {
+  color: #ba6a62;
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+del bdi {
+  color: var(--gray);
+  display: block;
+  font-size: 1.2rem;
+}
+
+.woocommerce div.product p.stock {
+  font-size: 1rem;
+  padding-left: 5rem;
+}
+
+.woocommerce div.product .stock {
+  color: #d19c97;
+}
+
+.variations select{
+  width: 70%;
 }
