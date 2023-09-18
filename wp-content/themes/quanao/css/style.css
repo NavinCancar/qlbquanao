@@ -9770,21 +9770,21 @@ span.select2-selection.select2-selection--single {
   background-color: #ead2d0;
 }
 
-.woocommerce div.product p.price {
-  color: var(--gray);
-  font-size: 1rem;
-}
-
-bdi {
+.summary bdi {
   color: #ba6a62;
   text-decoration: none;
   font-size: 1.8rem;
 }
 
-del bdi {
+.summary del bdi {
   color: var(--gray);
   display: block;
   font-size: 1.2rem;
+}
+
+.woocommerce div.product p.price, .woocommerce div.product span.price {
+  color: var(--gray);
+  font-size: 1rem;
 }
 
 .woocommerce div.product p.stock {

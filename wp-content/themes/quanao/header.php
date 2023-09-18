@@ -146,9 +146,9 @@
                             <div class="navbar-nav ml-auto py-0">
                                 <ul>
                                     <!-- <li><a href="<?php// bloginfo('stylesheet_directory') ?>/dang-nhap"
-                                            class="nav-item nav-link">Đăng ký</a></li>
-                                    <li><a href="<?php //bloginfo('stylesheet_directory') ?>/dang-nhap"
-                                            class="nav-item nav-link">Đăng nhập</a></li> -->
+                                            class="nav-item nav-link">Đăng ký</a></li> -->
+                                    <li><a href="http://localhost/qlbquanao/wp-login.php"
+                                            class="nav-item nav-link">Đăng nhập</a></li>
                                 </ul>
                             </div>
                         </div>
