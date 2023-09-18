@@ -86,9 +86,5 @@ function slider_post_type(){
 }
 add_action('init', 'slider_post_type');
 
-function custom_remove_action_woo(){
-    remove_action('woocommerce_before_main_content','woocommerce_breadcrumb',20);
-}
-add_action( 'init', 'custom_remove_action_woo');
 
 ?>
