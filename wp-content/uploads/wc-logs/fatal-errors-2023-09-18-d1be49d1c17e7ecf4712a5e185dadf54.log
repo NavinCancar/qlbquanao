@@ -1,0 +1,18 @@
+2023-09-18T14:29:42+00:00 CRITICAL Uncaught Error: Object of class WP_Error could not be converted to string in D:\laragon\www\qlbquanao\wp-content\themes\quanao\sidebar.php:19
+Stack trace:
+#0 D:\laragon\www\qlbquanao\wp-includes\template.php(785): require_once()
+#1 D:\laragon\www\qlbquanao\wp-includes\template.php(720): load_template('D:\\laragon\\www\\...', true, Array)
+#2 D:\laragon\www\qlbquanao\wp-includes\general-template.php(136): locate_template(Array, true, true, Array)
+#3 D:\laragon\www\qlbquanao\wp-content\themes\quanao\woocommerce\global\sidebar.php(22): get_sidebar('shop')
+#4 D:\laragon\www\qlbquanao\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('D:\\laragon\\www\\...')
+#5 D:\laragon\www\qlbquanao\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1045): wc_get_template('global/sidebar....')
+#6 D:\laragon\www\qlbquanao\wp-includes\class-wp-hook.php(310): woocommerce_get_sidebar('')
+#7 D:\laragon\www\qlbquanao\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#8 D:\laragon\www\qlbquanao\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 D:\laragon\www\qlbquanao\wp-content\themes\quanao\woocommerce\archive-product.php(134): do_action('woocommerce_sid...')
+#10 D:\laragon\www\qlbquanao\wp-includes\template-loader.php(106): include('D:\\laragon\\www\\...')
+#11 D:\laragon\www\qlbquanao\wp-blog-header.php(19): require_once('D:\\laragon\\www\\...')
+#12 D:\laragon\www\qlbquanao\index.php(17): require('D:\\laragon\\www\\...')
+#13 {main}
+  thrown in D:\laragon\www\qlbquanao\wp-content\themes\quanao\sidebar.php on line 19
+

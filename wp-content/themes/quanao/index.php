@@ -139,4 +139,3 @@
 
 <!--Note: Ngoài ra có thể get_sidebar() tuy nhiên phần này chỉ dùng cho trang cửa hàng nên không xử lý.
 Các trường hợp còn lại get_template_part('<tền file không .php>')-->
-

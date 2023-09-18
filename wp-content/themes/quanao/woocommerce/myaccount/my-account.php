@@ -51,7 +51,7 @@ defined( 'ABSPATH' ) || exit;
 		 * @since 2.6.0
 		 */
 		do_action( 'woocommerce_account_content' );
-		//include('form-edit-account.php')
+		
 	?>
             </div>
         </div>
