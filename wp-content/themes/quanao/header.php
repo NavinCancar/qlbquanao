@@ -15,7 +15,9 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;700;800;900&family=Sawarabi+Gothic&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;700;800;900&family=Sawarabi+Gothic&display=swap"
+        rel="stylesheet">
 
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -143,10 +145,10 @@
                             </div>
                             <div class="navbar-nav ml-auto py-0">
                                 <ul>
-                                    <li><a href="<?php bloginfo('stylesheet_directory') ?>/dang-nhap"
+                                    <!-- <li><a href="<?php// bloginfo('stylesheet_directory') ?>/dang-nhap"
                                             class="nav-item nav-link">Đăng ký</a></li>
-                                    <li><a href="<?php bloginfo('stylesheet_directory') ?>/dang-nhap"
-                                            class="nav-item nav-link">Đăng nhập</a></li>
+                                    <li><a href="<?php //bloginfo('stylesheet_directory') ?>/dang-nhap"
+                                            class="nav-item nav-link">Đăng nhập</a></li> -->
                                 </ul>
                             </div>
                         </div>
