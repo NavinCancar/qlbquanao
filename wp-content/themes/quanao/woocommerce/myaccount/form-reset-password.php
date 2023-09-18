@@ -48,7 +48,7 @@ do_action( 'woocommerce_before_reset_password_form' );
     <p class="woocommerce-form-row form-row">
         <input type="hidden" name="wc_reset_password" value="true" />
         <button type="submit"
-            class="woocommerce-Button button<?php echo esc_attr( wc_wp_theme_get_element_class_name( 'button' ) ? ' ' . wc_wp_theme_get_element_class_name( 'button' ) : '' ); ?>"
+            class="woocommerce-Button btn btn-primary <?php echo esc_attr( wc_wp_theme_get_element_class_name( 'button' ) ? ' ' . wc_wp_theme_get_element_class_name( 'button' ) : '' ); ?>"
             value="<?php esc_attr_e( 'Save', 'woocommerce' ); ?>"><?php esc_html_e( 'Save', 'woocommerce' ); ?></button>
     </p>
 

@@ -45,7 +45,7 @@ do_action( 'woocommerce_before_account_orders', $has_orders ); ?>
         <tr
             class="woocommerce-orders-table__row woocommerce-orders-table__row--status-<?php echo esc_attr( $order->get_status() ); ?> order">
             <?php foreach ( wc_get_account_orders_columns() as $column_id => $column_name ) : ?>
-            <td class="woocommerce-orders-table__cell woocommerce-orders-table__cell-<?php echo esc_attr( $column_id ); ?>"
+            <td class="woocommerce-orders-table__cell woocommerce-orders-table__cell-<?php echo esc_attr( $column_id ); ?>hehe"
                 data-title="<?php echo esc_attr( $column_name ); ?>">
                 <?php if ( has_action( 'woocommerce_my_account_my_orders_column_' . $column_id ) ) : ?>
                 <?php do_action( 'woocommerce_my_account_my_orders_column_' . $column_id, $order ); ?>
@@ -74,7 +74,7 @@ do_action( 'woocommerce_before_account_orders', $has_orders ); ?>
 
 								if ( ! empty( $actions ) ) {
 									foreach ( $actions as $key => $action ) { // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited
-										echo '<a href="' . esc_url( $action['url'] ) . '" class="woocommerce-button' . esc_attr( $wp_button_class ) . ' button ' . sanitize_html_class( $key ) . '">' . esc_html( $action['name'] ) . '</a>';
+										echo '<a href="' . esc_url( $action['url'] ) . '" class="woocommerce-button' . esc_attr( $wp_button_class ) . ' btn btn-secondary btn-block ' . sanitize_html_class( $key ) . '">' . esc_html( $action['name'] ) . '</a>';
 									}
 								}
 								?>
@@ -93,12 +93,12 @@ do_action( 'woocommerce_before_account_orders', $has_orders ); ?>
 <?php if ( 1 < $customer_orders->max_num_pages ) : ?>
 <div class="woocommerce-pagination woocommerce-pagination--without-numbers woocommerce-Pagination">
     <?php if ( 1 !== $current_page ) : ?>
-    <a class="woocommerce-button woocommerce-button--previous woocommerce-Button woocommerce-Button--previous button<?php echo esc_attr( $wp_button_class ); ?>"
+    <a class="woocommerce-button woocommerce-button--previous woocommerce-Button woocommerce-Button--previous btn btn-primary <?php echo esc_attr( $wp_button_class ); ?>"
         href="<?php echo esc_url( wc_get_endpoint_url( 'orders', $current_page - 1 ) ); ?>"><?php esc_html_e( 'Previous', 'woocommerce' ); ?></a>
     <?php endif; ?>
 
     <?php if ( intval( $customer_orders->max_num_pages ) !== $current_page ) : ?>
-    <a class="woocommerce-button woocommerce-button--next woocommerce-Button woocommerce-Button--next button<?php echo esc_attr( $wp_button_class ); ?>"
+    <a class="woocommerce-button woocommerce-button--next woocommerce-Button woocommerce-Button--next btn btn-primary <?php echo esc_attr( $wp_button_class ); ?>"
         href="<?php echo esc_url( wc_get_endpoint_url( 'orders', $current_page + 1 ) ); ?>"><?php esc_html_e( 'Next', 'woocommerce' ); ?></a>
     <?php endif; ?>
 </div>
@@ -106,7 +106,7 @@ do_action( 'woocommerce_before_account_orders', $has_orders ); ?>
 
 <?php else : ?>
 
-<?php wc_print_notice( esc_html__( 'No order has been made yet.', 'woocommerce' ) . ' <a class="woocommerce-Button button' . esc_attr( $wp_button_class ) . '" href="' . esc_url( apply_filters( 'woocommerce_return_to_shop_redirect', wc_get_page_permalink( 'shop' ) ) ) . '">' . esc_html__( 'Browse products', 'woocommerce' ) . '</a>', 'notice' ); // phpcs:ignore WooCommerce.Commenting.CommentHooks.MissingHookComment ?>
+<?php wc_print_notice( esc_html__( 'No order has been made yet.', 'woocommerce' ) . ' <a class="woocommerce-Button btn btn-primary ' . esc_attr( $wp_button_class ) . '" href="' . esc_url( apply_filters( 'woocommerce_return_to_shop_redirect', wc_get_page_permalink( 'shop' ) ) ) . '">' . esc_html__( 'Browse products', 'woocommerce' ) . '</a>', 'notice' ); // phpcs:ignore WooCommerce.Commenting.CommentHooks.MissingHookComment ?>
 
 <?php endif; ?>
 

@@ -9635,8 +9635,8 @@ del bdi{
     width: 100%;
 }
 
-.size-75 img{
-  width: 75px !important;
+.size-75 img {
+  width: 250px !important;
 }
 
 .woocommerce table.shop_table {
@@ -9675,7 +9675,9 @@ del bdi{
   color: #000;
 }
 
-
+.variation {
+  height: 20px;
+}
 /*Thanh toán*/
 
 .woocommerce-error {
@@ -9771,21 +9773,21 @@ span.select2-selection.select2-selection--single {
   background-color: #ead2d0;
 }
 
-.woocommerce div.product p.price {
-  color: var(--gray);
-  font-size: 1rem;
-}
-
-bdi {
+.summary bdi {
   color: #ba6a62;
   text-decoration: none;
   font-size: 1.8rem;
 }
 
-del bdi {
+.summary del bdi {
   color: var(--gray);
   display: block;
   font-size: 1.2rem;
+}
+
+.woocommerce div.product p.price, .woocommerce div.product span.price {
+  color: var(--gray);
+  font-size: 1rem;
 }
 
 .woocommerce div.product p.stock {
@@ -9799,4 +9801,57 @@ del bdi {
 
 .variations select{
   width: 70%;
+}
+
+/*Tài khoản*/
+.woocommerce-account .woocommerce-MyAccount-content {
+  width: 100%;
+}
+
+.woocommerce form .form-row label {
+  padding-right: 15px;
+}
+
+span.password-input, .woocommerce-address-fields .woocommerce-input-wrapper {
+  width: 100%;
+}
+
+
+
+/*Ghi đè btn-primary*/
+.form-submit #submit {
+  color: #212529 !important;
+  background-color: #D19C97 !important;
+  border-color: #D19C97 !important;
+}
+
+.form-submit #submit:hover {
+  color: #fff !important;
+  background-color: #c5837c !important;
+  border-color: #c17a74 !important;
+}
+
+.form-submit #submit:focus, .form-submit #submit.focus {
+  color: #fff !important;
+  background-color: #c5837c !important;
+  border-color: #c17a74 !important;
+  box-shadow: 0 0 0 0.2rem rgba(183, 138, 135, 0.5) !important;
+}
+
+.form-submit #submit.disabled, .form-submit #submit:disabled {
+  color: #212529 !important;
+  background-color: #D19C97 !important;
+  border-color: #D19C97 !important;
+}
+
+.form-submit #submit:not(:disabled):not(.disabled):active, .form-submit #submit:not(:disabled):not(.disabled).active,
+.show > .form-submit #submit.dropdown-toggle {
+  color: #fff !important;
+  background-color: #c17a74 !important;
+  border-color: #bd726b !important;
+}
+
+.form-submit #submit:not(:disabled):not(.disabled):active:focus, .form-submit #submit:not(:disabled):not(.disabled).active:focus,
+.show > .form-submit #submit.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(183, 138, 135, 0.5) !important;
 }
