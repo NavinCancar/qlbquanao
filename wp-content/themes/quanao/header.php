@@ -147,8 +147,9 @@
                                 <ul>
                                     <!-- <li><a href="<?php// bloginfo('stylesheet_directory') ?>/dang-nhap"
                                             class="nav-item nav-link">Đăng ký</a></li> -->
-                                    <li><a href="http://localhost/qlbquanao/wp-login.php"
-                                            class="nav-item nav-link">Đăng nhập</a></li>
+                                    <li><a href="<?php bloginfo('stylesheet_directory') ?>/tai-khoan"
+                                            style="font-size:1.5rem" class="nav-item nav-link"><i
+                                                class="fas fa-user-circle"></i></a></li>
                                 </ul>
                             </div>
                         </div>

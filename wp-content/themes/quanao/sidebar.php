@@ -1,6 +1,6 @@
 <div class="border-bottom mb-4 pb-4">
     <h5 class="font-weight-semi-bold mb-4">LỌC SẢN PHẨM</h5>
-    <form action="<?php do_action( 'quanao_getprice' ); ?>" method="POST">
+    <form action="#" method="POST">
         <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
             <div class="list-group">
 
