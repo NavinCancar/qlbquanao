@@ -398,7 +398,7 @@ h3, .h3 {
   }
 }
 
-h4, .h4 {
+h4, .h4, .widget-title {
   font-size: 1.5rem;
 }
 
@@ -1873,7 +1873,7 @@ pre code {
   border: 0;
 }
 
-.form-control, .input-text, .variations select {
+.form-control, .input-text, .variations select, .widget input {
   display: block;
   width: 100%;
   height: calc(1.5em + 0.75rem + 2px);
@@ -2319,7 +2319,7 @@ textarea.form-control {
   }
 }
 
-.btn, .woocommerce .woocommerce-message .button{
+.btn, .woocommerce .woocommerce-message .button, .widget button{
   display: inline-block;
   font-weight: 400;
   color: #6F6F6F;
@@ -9470,7 +9470,7 @@ a.text-dark:hover, a.text-dark:focus {
   font-weight: 500;
 }
 
-.font-weight-semi-bold {
+.font-weight-semi-bold, .widget-title {
   font-weight: 600;
 }
 
@@ -9819,30 +9819,34 @@ span.password-input, .woocommerce-address-fields .woocommerce-input-wrapper {
 
 
 /*Ghi đè btn-primary*/
-.form-submit #submit {
+.form-submit #submit, .widget button {
   color: #212529 !important;
   background-color: #D19C97 !important;
   border-color: #D19C97 !important;
 }
 
-.form-submit #submit:hover {
+.form-submit #submit:hover, .widget button:hover {
   color: #fff !important;
   background-color: #c5837c !important;
   border-color: #c17a74 !important;
 }
 
-.form-submit #submit:focus, .form-submit #submit.focus {
+.form-submit #submit:focus, .form-submit #submit.focus, 
+.widget button:focus, .widget button.focus {
   color: #fff !important;
   background-color: #c5837c !important;
   border-color: #c17a74 !important;
   box-shadow: 0 0 0 0.2rem rgba(183, 138, 135, 0.5) !important;
 }
 
-.form-submit #submit.disabled, .form-submit #submit:disabled {
+.form-submit #submit.disabled, .form-submit #submit:disabled, 
+.widget button.disabled, .widget button:disabled {
   color: #212529 !important;
   background-color: #D19C97 !important;
   border-color: #D19C97 !important;
 }
+
+
 
 .form-submit #submit:not(:disabled):not(.disabled):active, .form-submit #submit:not(:disabled):not(.disabled).active,
 .show > .form-submit #submit.dropdown-toggle {
@@ -9854,4 +9858,62 @@ span.password-input, .woocommerce-address-fields .woocommerce-input-wrapper {
 .form-submit #submit:not(:disabled):not(.disabled):active:focus, .form-submit #submit:not(:disabled):not(.disabled).active:focus,
 .show > .form-submit #submit.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(183, 138, 135, 0.5) !important;
+}
+
+/*Sidebar*/
+
+.price_slider_amount #min_price, .price_slider_amount #max_price{
+  display: flex !important;
+}
+
+.price_slider_amount .price_label{
+  display: none !important;
+}
+
+.widget button{
+  border-radius: 0 !important;
+  font-weight: 400 !important;
+  width: 50%;
+}
+
+.widget{
+  position: flex;
+  margin-bottom: 3rem;
+}
+
+.widget-title{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.woocommerce-widget-layered-nav-list li{
+  margin-left: 20px;
+}
+
+.widget form.woocommerce-product-search {
+  display: flex;
+  align-items: center;
+}
+
+.widget form.woocommerce-product-search .search-field {
+  margin-right: 10px;
+}
+
+.widget #woocommerce-product-search-field-0{
+  width: 100%;
+}
+
+.price_slider_amount {
+  display: flex;
+  align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+.price_slider_amount input {
+  margin-right: 10px; /* Khoảng cách giữa hai input */
+}
+
+.price_slider_amount label::after {
+  content: "-";
+  margin-left: 10px;
+  margin-right: 10px;
 }

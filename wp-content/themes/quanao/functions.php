@@ -86,4 +86,22 @@ function slider_post_type(){
 }
 add_action('init', 'slider_post_type');
 
-//---------------------------------------=============================================
+function custom_remove_action_woo(){
+    remove_action('woocommerce_before_main_content','woocommerce_breadcrumb',20);
+}
+add_action( 'init', 'custom_remove_action_woo');
+
+//====================================================================================
+
+function wpdocs_theme_slug_widgets_init() {
+    register_sidebar( array(
+        'name'          => __( 'Tên sidebar', 'text_domain' ),
+        'id'            => 'sidebar-1',
+        'description'   => __( 'Mô tả sidebar', 'text_domain' ),
+        'before_widget' => '<div class="widget">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="widget-title">',
+        'after_title'   => '</h2>',
+    ) );
+}
+add_action( 'widgets_init', 'wpdocs_theme_slug_widgets_init' );
