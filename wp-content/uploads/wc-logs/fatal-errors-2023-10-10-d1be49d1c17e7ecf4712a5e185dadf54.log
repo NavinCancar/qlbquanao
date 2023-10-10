@@ -1,0 +1,43 @@
+2023-10-10T15:47:49+00:00 CRITICAL Uncaught Error: Object of class WP_Error could not be converted to string in D:\xampp\htdocs\qlbquanao\wp-content\themes\quanao\functions.php:124
+Stack trace:
+#0 D:\xampp\htdocs\qlbquanao\wp-content\themes\quanao\woocommerce\archive-product.php(30): custom_breadcrumbs()
+#1 D:\xampp\htdocs\qlbquanao\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\qlbquanao\wp-content\themes\quanao\woocommerce\taxonomy-product-cat.php(22): wc_get_template('archive-product...')
+#3 D:\xampp\htdocs\qlbquanao\wp-includes\template-loader.php(106): include('D:\\xampp\\htdocs...')
+#4 D:\xampp\htdocs\qlbquanao\wp-blog-header.php(19): require_once('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\qlbquanao\index.php(17): require('D:\\xampp\\htdocs...')
+#6 {main}
+  thrown in D:\xampp\htdocs\qlbquanao\wp-content\themes\quanao\functions.php on line 124
+
+2023-10-10T15:59:24+00:00 CRITICAL Uncaught Error: Call to a member function get_name() on string in D:\xampp\htdocs\qlbquanao\wp-content\themes\quanao\woocommerce\single-product.php:43
+Stack trace:
+#0 D:\xampp\htdocs\qlbquanao\wp-includes\template-loader.php(106): include()
+#1 D:\xampp\htdocs\qlbquanao\wp-blog-header.php(19): require_once('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\qlbquanao\index.php(17): require('D:\\xampp\\htdocs...')
+#3 {main}
+  thrown in D:\xampp\htdocs\qlbquanao\wp-content\themes\quanao\woocommerce\single-product.php on line 43
+
+2023-10-10T15:59:41+00:00 CRITICAL Uncaught Error: Call to a member function get_name() on string in D:\xampp\htdocs\qlbquanao\wp-content\themes\quanao\woocommerce\single-product.php:43
+Stack trace:
+#0 D:\xampp\htdocs\qlbquanao\wp-includes\template-loader.php(106): include()
+#1 D:\xampp\htdocs\qlbquanao\wp-blog-header.php(19): require_once('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\qlbquanao\index.php(17): require('D:\\xampp\\htdocs...')
+#3 {main}
+  thrown in D:\xampp\htdocs\qlbquanao\wp-content\themes\quanao\woocommerce\single-product.php on line 43
+
+2023-10-10T16:00:46+00:00 CRITICAL Uncaught Error: Call to a member function get_name() on string in D:\xampp\htdocs\qlbquanao\wp-content\themes\quanao\woocommerce\single-product.php:43
+Stack trace:
+#0 D:\xampp\htdocs\qlbquanao\wp-includes\template-loader.php(106): include()
+#1 D:\xampp\htdocs\qlbquanao\wp-blog-header.php(19): require_once('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\qlbquanao\index.php(17): require('D:\\xampp\\htdocs...')
+#3 {main}
+  thrown in D:\xampp\htdocs\qlbquanao\wp-content\themes\quanao\woocommerce\single-product.php on line 43
+
+2023-10-10T16:01:27+00:00 CRITICAL Uncaught Error: Call to undefined function get_name() in D:\xampp\htdocs\qlbquanao\wp-content\themes\quanao\woocommerce\single-product.php:43
+Stack trace:
+#0 D:\xampp\htdocs\qlbquanao\wp-includes\template-loader.php(106): include()
+#1 D:\xampp\htdocs\qlbquanao\wp-blog-header.php(19): require_once('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\qlbquanao\index.php(17): require('D:\\xampp\\htdocs...')
+#3 {main}
+  thrown in D:\xampp\htdocs\qlbquanao\wp-content\themes\quanao\woocommerce\single-product.php on line 43
+

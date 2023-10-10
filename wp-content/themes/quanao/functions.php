@@ -105,3 +105,49 @@ function wpdocs_theme_slug_widgets_init() {
     ) );
 }
 add_action( 'widgets_init', 'wpdocs_theme_slug_widgets_init' );
+
+//===================================================================================
+function custom_breadcrumbs() {
+    $breadcrumbs = '';
+
+    if ( ! is_home() && ! is_front_page() || is_paged() ) {
+        $breadcrumbs .= '<p class="m-0"><a href="' . esc_url( home_url( '/' ) ) . '">Trang chủ</a></p>';
+
+        if ( is_shop() ) {
+            $breadcrumbs .= '<p class="m-0 px-2">-</p>';
+            $breadcrumbs .= '<p class="m-0">Sản phẩm</p>';
+        } elseif ( is_product_category() ) {
+            $breadcrumbs .= '<p class="m-0 px-2">-</p>';
+            $breadcrumbs .= '<p class="m-0">' . single_cat_title( '', false ) . '</p>';
+        } elseif ( is_singular( 'post' ) ) {
+            $category = get_the_category();
+            if ( $category ) {
+                $category_id = $category[0]->cat_ID;
+                $breadcrumbs .= '<p class="m-0 px-2">-</p>';
+                $breadcrumbs .= get_category_parents( $category_id, true, '<p class="m-0"><p>' );
+            }
+            $breadcrumbs .= '<p class="m-0">' . get_the_title() . '</p>';
+        } elseif ( is_singular( 'page' ) ) {
+            $post = get_post();
+            if ( $post->post_parent ) {
+                $ancestors = get_post_ancestors( $post->ID );
+                $ancestors = array_reverse( $ancestors );
+                foreach ( $ancestors as $ancestor ) {
+                    $breadcrumbs .= '<p class="m-0 px-2">-</p>';
+                    $breadcrumbs .= '<p class="m-0"><a href="' . get_permalink( $ancestor ) . '">' . get_the_title( $ancestor ) . '</a></p>';
+                }
+            }
+            $breadcrumbs .= '<p class="m-0 px-2">-</p>';
+            $breadcrumbs .= '<p class="m-0">' . get_the_title() . '</p>';
+        } elseif ( is_search() ) {
+            $breadcrumbs .= '<p class="m-0 px-2">-</p>';
+            $breadcrumbs .= '<p class="m-0">Kết quả tìm kiếm cho "' . get_search_query() . '"</p>';
+        } elseif ( is_404() ) {
+            $breadcrumbs .= '<p class="m-0 px-2">-</p>';
+            $breadcrumbs .= '<p class="m-0">404 Không tìm thấy trang</p>';
+        }
+    }
+
+    echo $breadcrumbs;
+}
+

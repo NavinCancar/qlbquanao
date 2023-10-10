@@ -35,6 +35,13 @@ get_header( 'shop' ); ?>
 </div>-->
 <div class="container-fluid pt-5">
     <div class="row px-xl-5 pb-3">
+        <div class="d-inline-flex pb-3">
+            <p class="m-0"><a href="' . esc_url( home_url( '/' ) ) . '">Trang chủ</a></p>
+            <p class="m-0 px-2">-</p>
+            <p class="m-0"><a href="' . esc_url( home_url( '/san-pham' ) ) . '">Sản phẩm</a></p>
+            <p class="m-0 px-2">-</p>
+            <p class="m-0"><?php echo get_the_title(); ?></p>
+        </div>
         <?php
             /**
             * woocommerce_before_main_content hook.
