@@ -79,13 +79,12 @@
                     </form>
                 </div>
                 <div class="col-lg-3 col-6 text-right">
-                    <a href="" class="btn border">
-                        <i class="fas fa-heart text-primary"></i>
-                        <span class="badge">0</span>
-                    </a>
                     <a href="<?php bloginfo('stylesheet_directory') ?>/gio-hang" class="btn border">
                         <i class="fas fa-shopping-cart text-primary"></i>
                         <span class="badge">0</span>
+                    </a>
+                    <a href="<?php bloginfo('stylesheet_directory') ?>/tai-khoan" class="btn border">
+                        <i class="fas fa-user-circle text-primary"></i>
                     </a>
                 </div>
             </div>
@@ -122,7 +121,7 @@
                     </nav>
                 </div>
                 <div class="col-lg-9">
-                    <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
+                    <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0" style="height: 100%;">
                         <a href="" class="text-decoration-none d-block d-lg-none">
                             <h1 class="m-0 display-5 font-weight-semi-bold"><span
                                     class="text-primary font-weight-bold border px-3 mr-1">E</span>Shopper</h1>
@@ -146,10 +145,10 @@
                             <div class="navbar-nav ml-auto py-0">
                                 <ul>
                                     <!-- <li><a href="<?php// bloginfo('stylesheet_directory') ?>/dang-nhap"
-                                            class="nav-item nav-link">Đăng ký</a></li> -->
+                                            class="nav-item nav-link">Đăng ký</a></li> 
                                     <li><a href="<?php bloginfo('stylesheet_directory') ?>/tai-khoan"
                                             style="font-size:1.5rem" class="nav-item nav-link"><i
-                                                class="fas fa-user-circle"></i></a></li>
+                                                class="fas fa-user-circle"></i></a></li>-->
                                 </ul>
                             </div>
                         </div>

@@ -9917,3 +9917,7 @@ span.password-input, .woocommerce-address-fields .woocommerce-input-wrapper {
   margin-left: 10px;
   margin-right: 10px;
 }
+
+a .card-footer:hover {
+  background-color: #faeceb !important;
+}

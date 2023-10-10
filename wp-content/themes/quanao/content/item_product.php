@@ -14,10 +14,11 @@
             <!--$product->get_regular_price(); && $product->get_sale_price(); cách lấy giá từng cái nhưng không có format-->
         </div>
     </div>
-    <div class="card-footer d-flex justify-content-between bg-light border">
-        <a href="<?php the_permalink(); ?>" class="btn btn-sm text-dark p-0"><i
-                class="fas fa-eye text-primary mr-1"></i>Xem </a>
-        <a href="<?php bloginfo('url'); ?>?add-to-cart=<?php the_ID(); ?>" class="btn btn-sm text-dark p-0"><i
-                class="fas fa-shopping-cart text-primary mr-1"></i>Thêm vào giỏ</a>
-    </div>
+    <a href="<?php the_permalink(); ?>" class="btn btn-sm text-dark p-0">
+        <div class="card-footer text-center bg-light border">
+            <i class="fas fa-eye text-primary mr-1"></i>Xem 
+            <!--<a href="<?php bloginfo('url'); ?>?add-to-cart=<?php the_ID(); ?>" class="btn btn-sm text-dark p-0"><i
+                    class="fas fa-shopping-cart text-primary mr-1"></i>Thêm vào giỏ</a>-->
+        </div>
+    </a>
 </div>
