@@ -67,17 +67,19 @@
                     </a>
                 </div>
                 <div class="col-lg-6 col-6 text-left">
-                    <form action="">
+                    <form role="search" method="get" class="woocommerce-product-search" action="http://localhost/qlbquanao/">
                         <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Search for products">
+                            <input type="search" id="woocommerce-product-search-field-0 search-field" class="form-control" placeholder="Search for products" name="s" title="Search for products">
                             <div class="input-group-append">
-                                <span class="input-group-text bg-transparent text-primary">
+                                <button type="submit" class="input-group-text bg-transparent text-primary" value="<?php echo esc_attr_x( 'Search', 'submit button' ); ?>">
                                     <i class="fa fa-search"></i>
-                                </span>
+                                </button>
                             </div>
+                            <input type="hidden" name="post_type" value="product">
                         </div>
                     </form>
                 </div>
+                
                 <div class="col-lg-3 col-6 text-right">
                     <a href="<?php bloginfo('stylesheet_directory') ?>/gio-hang" class="btn border">
                         <i class="fas fa-shopping-cart text-primary"></i>
