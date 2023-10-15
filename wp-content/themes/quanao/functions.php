@@ -151,3 +151,15 @@ function custom_breadcrumbs() {
     echo $breadcrumbs;
 }
 
+
+//hiển thị sản phẩm xem gần đây
+function viewedProduct(){
+	session_start();
+	if(!isset($_SESSION["viewed"])){
+		$_SESSION["viewed"] = array();
+	}
+	if(is_singular('product')){
+		$_SESSION["viewed"][get_the_ID()] = get_the_ID();
+	}
+}
+add_action('wp', 'viewedProduct');

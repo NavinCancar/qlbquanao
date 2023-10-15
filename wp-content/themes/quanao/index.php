@@ -81,6 +81,38 @@
         </div>
     </div>
     <!-- Products End -->
+
+    <!-- SP xem gần đây -->
+    <div class="container-fluid pt-5">
+        <div class="text-center mb-4">
+            <h2 class="section-title px-5"><span class="px-2">SẢN PHẨM ĐÃ XEM GẦN ĐÂY</span></h2>
+        </div>
+        <div class="row px-xl-5 pb-3">
+
+            <?php if(isset($_SESSION["viewed"]) && $_SESSION["viewed"]){
+                $data = $_SESSION["viewed"];
+                $args = array(
+                    'post_type' => 'product',
+                    'post_status' => 'publish',
+                    'posts_per_page' => 10,
+                    'post__in'	=> $data
+                );
+            ?>
+            <?php $getposts = new WP_query( $args);?>
+            <?php global $wp_query; $wp_query->in_the_loop = true; ?>
+            <?php while ($getposts->have_posts()) : $getposts->the_post(); ?>
+            <?php global $product; ?>
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <?php get_template_part('content/item_product')?>
+            </div>
+            <?php endwhile; wp_reset_postdata(); 
+            } else { ?> 
+                <p>Không có sản phẩm nào đã xem!</p>
+            <?php } ?>
+        </div>
+    </div>
+    <!-- Products End -->
+
     <!-- danh muc 1 -->
     <div class="container-fluid pt-5">
         <div class="text-center mb-4">

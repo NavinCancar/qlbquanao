@@ -23,27 +23,27 @@ if ( $upsells ) : ?>
 
 <section class="up-sells upsells products">
     <?php
-		$heading = apply_filters( 'woocommerce_product_upsells_products_heading', __( 'You may also like&hellip;', 'woocommerce' ) );
-
+		//$heading = apply_filters( 'woocommerce_product_upsells_products_heading', __( 'You may also like&hellip;', 'woocommerce' ) );
+    $heading = apply_filters( 'woocommerce_product_upsells_products_heading', __( 'Gợi ý kèm theo&hellip;', 'woocommerce' ) );
 		if ( $heading ) :
 			?>
     <h2><?php echo esc_html( $heading ); ?></h2>
     <?php endif; ?>
 
     <?php woocommerce_product_loop_start(); ?>
+    <div class="row px-xl-5 pb-3">
+      <?php foreach ( $upsells as $upsell ) : ?>
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+        <?php
+            $post_object = get_post( $upsell->get_id() );
 
-    <?php foreach ( $upsells as $upsell ) : ?>
+            setup_postdata( $GLOBALS['post'] =& $post_object ); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited, Squiz.PHP.DisallowMultipleAssignments.Found
 
-    <?php
-				$post_object = get_post( $upsell->get_id() );
-
-				setup_postdata( $GLOBALS['post'] =& $post_object ); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited, Squiz.PHP.DisallowMultipleAssignments.Found
-
-				wc_get_template_part( 'content', 'product' );
-				?>
-
-    <?php endforeach; ?>
-
+            wc_get_template_part( 'content', 'product' );
+            ?>
+        </div>
+      <?php endforeach; ?>
+    </div>
     <?php woocommerce_product_loop_end(); ?>
 
 </section>
