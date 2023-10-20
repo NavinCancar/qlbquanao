@@ -1,1 +1,0 @@
-<!--Hiển thị kết quả tìm kiếm trả về-->

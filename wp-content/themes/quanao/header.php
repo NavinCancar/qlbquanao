@@ -6,16 +6,6 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
-	<!-- Google Analytics -->
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPVYHBTNX4"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-YPVYHBTNX4');
-    </script>
     
     <?php wp_head(); ?>
 
@@ -153,15 +143,6 @@
                                         ) 
                                     ); 
                                 ?>
-                            </div>
-                            <div class="navbar-nav ml-auto py-0">
-                                <ul>
-                                    <!-- <li><a href="<?php// bloginfo('stylesheet_directory') ?>/dang-nhap"
-                                            class="nav-item nav-link">Đăng ký</a></li> 
-                                    <li><a href="<?php bloginfo('stylesheet_directory') ?>/tai-khoan"
-                                            style="font-size:1.5rem" class="nav-item nav-link"><i
-                                                class="fas fa-user-circle"></i></a></li>-->
-                                </ul>
                             </div>
                         </div>
                     </nav>

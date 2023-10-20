@@ -9585,7 +9585,7 @@ a.text-dark:hover, a.text-dark:focus {
   position: fixed;
   display: none;
   right: 30px;
-  bottom: 30px;
+  bottom: 15px;
   z-index: 11;
   animation: action 1s infinite alternate;
 }
@@ -9920,9 +9920,4 @@ span.password-input, .woocommerce-address-fields .woocommerce-input-wrapper {
 
 a .card-footer:hover {
   background-color: #faeceb !important;
-}
-
-#tidio-chat-iframe{
-  inset: auto 9px 50px auto !important;
-  height: 650px !important;
 }
