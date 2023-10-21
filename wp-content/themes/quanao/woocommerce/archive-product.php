@@ -98,13 +98,6 @@ get_header( 'shop' );?>
 						}
 
 						//woocommerce_product_loop_end();
-
-						/**
-						 * Hook: woocommerce_after_shop_loop.
-						 *
-						 * @hooked woocommerce_pagination - 10
-						 */
-						do_action( 'woocommerce_after_shop_loop' );
 					} else {
 						/**
 						 * Hook: woocommerce_no_products_found.
@@ -133,6 +126,16 @@ get_header( 'shop' );?>
 				</div>
 				<!-- Shop Sidebar End -->
 			</div>
+			<?php
+				if ( wc_get_loop_prop( 'total' ) ) {
+					/**
+					 * Hook: woocommerce_after_shop_loop.
+					 *
+					 * @hooked woocommerce_pagination - 10
+					 */
+					do_action( 'woocommerce_after_shop_loop' );
+				}
+			?>
 		</div>
 	</div>
 <?php get_footer( 'shop' );?>
